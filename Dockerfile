@@ -6,7 +6,6 @@ RUN mkdir -p /tmp/download && \
  rm -rf /tmp/download/docker/dockerd && \
  mv /tmp/download/docker/docker* /usr/local/bin/ && \
  rm -rf /tmp/download && \
- chmod -r 0666 /var/run/docker.sock \
  groupadd -g 999 docker && \
  usermod -aG staff,docker jenkins
 
